@@ -1,6 +1,117 @@
 <ion-view view-title="我的" class="account">
     <div class="head">个人中心</div>
-    <ion-content>
+    <ion-content style="top: 44px;">
+        <div class="personal">
+            <div class="p_header">
+                <div class="p_header_img">
+                    <img src="images/account/defaul.png" width="56" height="56"/>
+                </div>
+                <div class="p_header_name">
+                    <div class="name">我的名字叫中国</div>
+                    <div class="type">国家级</div>
+                    <div class="manage">
+                        <span>账户管理、收货地址</span>
+                        <img src="images/account/jiantou.png" width="5" height="8"/>
+                    </div>
+                </div>
+            </div>
+            <div class="p_watch">
+                <div class="attention p_watch_com">
+                    <div class="account_font14">55</div>
+                    <div class="account_font11">关注的商品</div>
+                </div>
+                <div class="shop p_watch_com">
+                    <div class="account_font14">55</div>
+                    <div class="account_font11">关注的店铺</div>
+                </div>
+                <div class="record p_watch_com">
+                    <div class="account_font14">55</div>
+                    <div class="account_font11">浏览记录</div>
+                </div>
+            </div>
+        </div>
+        <div class="my">
+            <div class="m_title">
+                <div class="m_title_name">
+                    <img src="images/account/order.png" width="15" height="18"/>
+                    <span>我的订单</span>
+                </div>
+                <div class="m_title_all">
+                    <span>全部订单</span>
+                    <img src="images/account/jiantou.png" width="10" height="12"/>
+                </div>
+            </div>
+            <div class="m_content">
+                <div class="m_content_name">
+                    <img src="images/account/daifukuan.png" width="21" height="18"/>
+                    <div>待付款</div>
+                </div>
+                <div class="m_content_name">
+                    <img src="images/account/daifukuan.png" width="21" height="18"/>
+                    <div>待付款</div>
+                </div>
+                <div class="m_content_name">
+                    <img src="images/account/daifukuan.png" width="21" height="18"/>
+                    <div>待付款</div>
+                </div>
+            </div>
+        </div>
+        <div class="my">
+            <div class="m_title">
+                <div class="m_title_name">
+                    <img src="images/account/money.png" width="15" height="18"/>
+                    <span>我的钱包</span>
+                </div>
+                <div class="m_title_all">
+                    <span hidden>全部订单</span>
+                    <img src="images/account/jiantou.png" width="10" height="12"/>
+                </div>
+            </div>
+            <div class="m_content">
+                <div class="m_content_name">
+                    <div>15.0</div>
+                    <div>账户余额</div>
+                </div>
+                <div class="m_content_name">
+                    <div>1</div>
+                    <div>优惠券</div>
+                </div>
+                <div class="m_content_name">
+                    <div>1</div>
+                    <div>优惠券</div>
+                </div>
+                <div class="m_content_name">
+                    <div>1</div>
+                    <div>优惠券</div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="account_tj">
+            <div class="account_tjtext">
+                <span class="account_tjlayout">
+                    <span class="account_tjtext_img"></span>为您推荐
+                </span>
+            </div>
+            <ul>
+                <li class="account_tjp" ng-repeat="item in [0,1,2,3,4]">
+                    <div>
+                        <img src="images/9.jpg"/>
+                        <span class="account_tjp_title">【京东自营】尼康镜头10-50mm，好礼送不停停停停停停</span>
+                    </div>
+                    <div>
+                        <span class="account_tjp_price">
+                            ￥
+                            <span class="big_price">499</span>
+                            <span class="small_price">.90</span>
+                        </span>
+                        <span class="account_tjp_similarity">看相似</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
 
     </ion-content>
 </ion-view>
