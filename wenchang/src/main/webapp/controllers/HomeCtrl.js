@@ -25,7 +25,6 @@ angular.module('Home',[])
                     "title":"种类"},
                 { "img":"images/6.png",
                     "title":"种类"}
-
             ];
 
             $scope.$on('$ionicView.enter', function(){
