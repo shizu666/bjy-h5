@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="wenchang:war">
+    <output-path>$PROJECT_DIR$/wenchang/target</output-path>
+    <root id="archive" name="wenchuang.war">
+      <element id="artifact" artifact-name="wenchang:war exploded" />
+    </root>
+  </artifact>
+</component>

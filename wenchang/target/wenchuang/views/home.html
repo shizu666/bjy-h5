@@ -1,0 +1,114 @@
+<ion-view view-title="首页" class="home">
+    <div id="search" class="search home_center">
+        <img class="s_img" src="images/top-jdlogo.png" width="40" height="40"/>
+        <div class="s_content">
+            <img src="images/icon-close-banner.png" width="20" height="20"/>
+            <input type="text" placeholder="请输入"/>
+        </div>
+        <div class="s_go home_font14">
+            登陆
+        </div>
+    </div>
+    <ion-content style="top: 0" on-scroll="getScrollLength()">
+        <ion-slide-box does-continue="true" auto-play="true" show-pager="true" slide-interval="3000"
+                       on-slide-changed="slideHasChanged($index)">
+            <ion-slide ng-repeat="item in bannerList">
+                <img class="ion_banner" ng-src="{{item}}" ng-click="goNextBanner($index)"/>
+            </ion-slide>
+        </ion-slide-box>
+        <div class="kind">
+            <div class="k_kind" ng-repeat="item in kindList">
+                <img ng-src="{{item.img}}" width="40" height="40"/>
+                <div>{{item.title}}</div>
+            </div>
+        </div>
+        <div class="home_banner"></div>
+        <div class="home_product" >
+            <div class="home_p50" ng-repeat="item in [0,1]">
+                <div class="home_pf">
+                    <strong class="home_tt">潮人必备</strong>
+                    <p class="home_wz">使得大量进口dddddd</p>
+                    <span class="home_yh">优惠实惠</span>
+                </div>
+                <div class="home_pi">
+                    <img class="home_pi_img" src="images/8.jpg" width="40" height="40"/>
+                </div>
+            </div>
+        </div>
+        <div class="home_bigproduct">
+            <div class="home_bpt">标题</div>
+            <div class="home_product" >
+                <div class="home_p50" ng-repeat="item in [0,1,2,3]">
+                    <div class="home_pf">
+                        <strong class="home_tt">潮人必备</strong>
+                        <p class="home_wz">使得大量进口dddddd</p>
+                        <span class="home_yh">优惠实惠fffffffffffff</span>
+                    </div>
+                    <div class="home_pi">
+                        <img class="home_pi_img" src="images/8.jpg" width="40" height="40"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="home_bigproduct">
+            <div class="home_product">
+                <div class="home_p25" ng-repeat="item in [0,1,2,3]">
+                    <div class="home_pf2">
+                        <strong class="home_tt">潮人必备</strong>
+                        <p class="home_wz">使得大量进口dddddd</p>
+                    </div>
+                    <span class="home_tb">周年庆</span>
+                    <div class="home_pi2">
+                        <img class="home_pi_img" src="images/8.jpg" width="40" height="40"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="home_banner"></div>
+        <div class="home_bigproduct">
+            <div class="home_bpt">标题</div>
+            <div class="home_product">
+                <div class="home_p50" ng-repeat="item in [0,1,2,3]">
+                    <div class="home_pf2">
+                        <strong class="home_tt">潮人必备</strong>
+                        <p class="home_wz">使得大量进口dddddd</p>
+                    </div>
+                    <span class="home_tb">周年庆</span>
+                    <div class="home_pi2">
+                        <img class="home_pi_img" src="images/8.jpg" width="40" height="40"/>
+                    </div>
+                </div>
+            </div>
+            <div class="home_banner"></div>
+        </div>
+        <div class="home_tj">
+            <div class="home_tjtext">
+                <span class="home_tjlayout">
+                    <span class="home_tjtext_img"></span>为您推荐
+                </span>
+            </div>
+            <ul>
+                <li class="home_tjp" ng-repeat="item in recommendList">
+                    <div>
+                        <img src="images/9.jpg"/>
+                        <span class="home_tjp_title">【京东自营】尼康镜头10-50mm，好礼送不停停停停停停</span>
+                    </div>
+                    <div>
+                        <span class="home_tjp_price">
+                            ￥
+                            <span class="big_price">499</span>
+                            <span class="small_price">.90</span>
+                        </span>
+                        <span class="home_tjp_similarity">看相似</span>
+                    </div>
+                </li>
+                <ion-infinite-scroll
+                        on-infinite="loadMore()"
+                        distance="1%"
+                        ng-if="loadMoreFlag"
+                        icon="ion-loading-c">
+                </ion-infinite-scroll>
+            </ul>
+        </div>
+    </ion-content>
+</ion-view>

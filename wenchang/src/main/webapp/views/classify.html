@@ -1,0 +1,32 @@
+<ion-view view-title="分类" class="classify">
+    <div class="search">
+        <img class="s_img" src="images/top-jdlogo.png" width="40" height="40"/>
+        <div class="s_content">
+            <img src="images/icon-close-banner.png" width="20" height="20"/>
+            <input type="text" placeholder="请输入"/>
+        </div>
+        <div class="s_go home_font14">
+            登陆
+        </div>
+    </div>
+    <ion-content style="top: 58px;" class="classify_left" scrollbar-y="false" >
+        <ul>
+            <li ng-repeat="item in [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]">衣服鞋帽反反复复</li>
+        </ul>
+    </ion-content>
+    <ion-content style="top: 58px;" class="classify_right">
+        <div class="classify_banner"></div>
+        <div class="classify_product" ng-repeat="item in [0,1,2]">
+            <div class="cp_title">
+                <span>专场推荐</span>
+            </div>
+            <ul>
+                <li ng-repeat="item2 in [0,1,2,3]">
+                    <img src="images/classify/1.jpg" width="55" height="55">
+                    <span>9.19乐米电商节</span>
+                </li>
+            </ul>
+        </div>
+        <br/><br/><br/><br/>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>商城</title>
+
+    <!--加载样式-->
+    <link href="styles/ionic/ionic.min.css" rel="stylesheet" />
+    <link href="styles/common.less" rel="stylesheet"/>
+    <link href="styles/home.less" rel="stylesheet"/>
+    <link href="styles/classify.less" rel="stylesheet"/>
+
+    <!--加载jar-->
+    <script src="lib/angular.min.js"></script>
+    <script src="lib/jquery-2.1.3.min.js"></script>
+    <script src="lib/ionic.min.js"></script>
+    <script src="lib/ionic.bundle.min.js"></script>
+
+    <script src="main.js"></script>
+    <script src="factory/factory.js"></script>
+    <script src="factory/global.js"></script>
+    <script src="route/route.js"></script>
+    <script src="controllers/TabCtrl.js"></script>
+    <script src="controllers/HomeCtrl.js"></script>
+    <script src="controllers/ClassifyCtrl.js"></script>
+    <script src="controllers/ShoppingCtrl.js"></script>
+    <script src="controllers/AccountCtrl.js"></script>
+
+    <style>
+        body{
+            font-family: PingFangSC-Regular,Helvetica,"Droid Sans",Arial,sans-serif;
+        }
+    </style>
+
+</head>
+<body>
+<ion-nav-view></ion-nav-view>
+</body>
+</html>
