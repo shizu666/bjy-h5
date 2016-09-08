@@ -22,12 +22,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="wenchang" />
+        <module name="wenchuang" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="bjy" target="1.5" />
-      <module name="wenchang" target="1.5" />
+      <module name="wenchuang" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
