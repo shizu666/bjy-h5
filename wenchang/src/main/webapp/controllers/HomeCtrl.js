@@ -40,11 +40,14 @@ angular.module('Home',[])
             //内容滚动，搜索框背景变化
             $scope.getScrollLength = function () {
                var postion =  $ionicScrollDelegate.getScrollPosition();
-                if(postion.top>200){
+                if(postion.top>85&&postion.top<100){
                     $('#search').addClass("home_searchChange");
+                }else if(postion.top>=100){
+                    $('#search').addClass("home_searchChange2");
                     $scope.showToTop = true;
                 }else{
                     $('#search').removeClass("home_searchChange");
+                    $('#search').removeClass("home_searchChange2");
                     $scope.showToTop = false;
                 }
             }
