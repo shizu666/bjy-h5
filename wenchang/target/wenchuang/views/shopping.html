@@ -1,5 +1,33 @@
-<ion-view>
-    <ion-content>
-        购物车
+<ion-view view-title="购物车" class="shopping">
+    <div class="head">购物车</div>
+    <ion-content style="top: 44px;">
+        <div class="null_shopping">
+            <img src="images/shopping/card.jpg" width="40" height="30"/>
+            <span>购物车空空如也,赶紧逛逛吧~</span>
+        </div>
+
+        <div class="shopping_tj" ng-repeat="item in [0,1,2,3]">
+            <div class="shopping_tjtext">
+                <span class="shopping_tjlayout">
+                    <span class="shopping_tjtext_img"></span>为您推荐
+                </span>
+            </div>
+            <ul>
+                <li class="shopping_tjp" ng-repeat="item in [0,1,2]">
+                    <div>
+                        <img src="images/shopping/1.jpg"/>
+                        <span class="shopping_tjp_title">【京东自营】尼康镜头10-50mm，好礼送不停停停停停停</span>
+                    </div>
+                    <div>
+                        <span class="shopping_tjp_price">
+                            ￥
+                            <span class="big_price">499</span>
+                            <span class="small_price">.90</span>
+                        </span>
+                       <!-- <span class="shopping_tjp_similarity">看相似</span>-->
+                    </div>
+                </li>
+            </ul>
+        </div>
     </ion-content>
 </ion-view>
