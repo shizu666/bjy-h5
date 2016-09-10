@@ -13,9 +13,7 @@ angular.module('Tab',[])
             //     $ionicLoading.hide();
             // },1000);
 
-
             
-
 
             //$scope.url = "https://angularjs.org/greet.php?callback=JSON_CALLBACK&name=Super%20Hero";
            //$scope.url = "http://rate.tmall.com/listTagClouds.htm?itemId=44890545950&isAll=true&isInner=true&_ksTS=1440214254542_329&callback=jsonp_review_tags";
