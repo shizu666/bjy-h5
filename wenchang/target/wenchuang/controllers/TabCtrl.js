@@ -13,21 +13,10 @@ angular.module('Tab',[])
             //     $ionicLoading.hide();
             // },1000);
 
-
+            
             
 
 
-            //$scope.url = "https://angularjs.org/greet.php?callback=JSON_CALLBACK&name=Super%20Hero";
-            //$scope.url = "http://192.168.9.109:80/mall-web/adVisit?callback=JSON_CALLBACK&id=167&type=2";
-           //$scope.url = "http://rate.tmall.com/listTagClouds.htm?itemId=44890545950&isAll=true&isInner=true&_ksTS=1440214254542_329&callback=jsonp_review_tags";
 
-            $scope.url = "http://192.168.9.109:80/mall-web/adVisit?id=167&type=2";
-           /* $http.get('http://rest.ihiss.com:9000/user/current',{
-                headers : {'X-Access-Token':token}
-            });*/
 
-            HttpGet.back($scope.url).success(function (data) {
-                console.log("data",data);
-            });
-
-    }]);
+        }]);
