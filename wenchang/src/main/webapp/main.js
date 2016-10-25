@@ -1,4 +1,4 @@
-angular.module('app',['ionic','route','factory','global','ngResource'])
+/*angular.module('app',['ionic','route','factory','global','ngResource'])
     .config(function($stateProvider, $urlRouterProvider,$ionicConfigProvider) {
         //$ionicConfigProvider.platform.ios.tabs.style('standard');
         //$ionicConfigProvider.platform.ios.tabs.position('bottom');
@@ -20,4 +20,50 @@ angular.module('app',['ionic','route','factory','global','ngResource'])
         // Each state's controller can be found in controllers.js
 
 
+    });*/
+/**
+ * 入口文件
+ * 2014-11-30 mon
+ */
+require.config({
+    baseUrl: "",
+    paths: {
+        "angular" : "lib/angular.min",
+        "angular-resource" : "lib/angular-resource.min",
+        "angular-sanitize" : "lib/angular-sanitize.min",
+        "angular-route" : "lib/angular-route.min",
+        "ocLazyLoad":"lib/ocLazyLoad.require.min",
+        "jquery":"lib/jquery-2.1.3.min",
+        "Factory" : "factory/factory",
+        //"Directive" : "directives/playtourDirective",
+        "Route" : "route/route",
+        "App" : "module/app"
+    },
+    waitSeconds: 0,
+    shim: {
+        'angular': {
+            exports: 'angular'
+        },
+        'angular-resource':{
+            deps: ["angular"],
+            exports: 'angular-resource'
+        },
+        'angular-route':{
+            deps: ['angular'],   //依赖什么模块
+            exports: 'angular-route'
+        },
+        'angular-sanitize':{
+            deps: ['angular'],   //依赖什么模块
+            exports: 'angular-sanitize'
+        },
+        'ocLazyLoad': ['angular'],
+        'App':['ocLazyLoad'],
+    }
+});
+
+require(['angular','angular-resource','angular-sanitize','angular-route',
+        'ocLazyLoad','jquery','Factory','Route','App'],
+    function (angular){
+        angular.bootstrap(document,["app"]);
     });
+

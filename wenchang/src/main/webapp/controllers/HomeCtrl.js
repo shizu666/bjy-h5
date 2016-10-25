@@ -1,4 +1,4 @@
-angular.module('Home',[])
+angular.module('controllers',[])
     .controller('HomeCtrl',['$scope','$state','$stateParams','$ionicLoading','$timeout','$ionicScrollDelegate',
         function ($scope,$state,$stateParams,$ionicLoading,$timeout,$ionicScrollDelegate) {
             $scope.bannerList = ["images/1.jpg","images/2.jpg","images/3.jpg","images/4.jpg","images/5.jpg"];

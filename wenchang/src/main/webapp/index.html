@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="app">
+<html lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <META HTTP-EQUIV="Cache-Control" CONTENT="no-cache">
@@ -8,30 +8,20 @@
 
     <!--加载样式-->
     <link href="styles/ionic/ionic.min.css" rel="stylesheet" />
-    <link href="styles/common.less" rel="stylesheet"/>
-    <link href="styles/home.less" rel="stylesheet"/>
-    <link href="styles/classify.less" rel="stylesheet"/>
-    <link href="styles/shopping.less" rel="stylesheet"/>
-    <link href="styles/account.less" rel="stylesheet"/>
 
     <!--加载jar-->
-    <script src="lib/angular.min.js"></script>
-    <script src="lib/jquery-2.1.3.min.js"></script>
-    <script src="lib/ionic.min.js"></script>
-    <script src="lib/ionic.bundle.min.js"></script>
-    <script src="lib/angular-resource.min.js"></script>
+    <!--<script src="lib/angular.min.js"></script>-->
+    <!--<script src="lib/jquery-2.1.3.min.js"></script>-->
+    <!--<script src="lib/ionic.min.js"></script>-->
+    <!--<script src="lib/angular-resource.min.js"></script>-->
 
-    <script src="main.js"></script>
-    <script src="factory/factory.js"></script>
-    <script src="factory/global.js"></script>
-    <script src="route/route.js"></script>
-    <script src="controllers/TabCtrl.js"></script>
-    <script src="controllers/HomeCtrl.js"></script>
-    <script src="controllers/ClassifyCtrl.js"></script>
-    <script src="controllers/ShoppingCtrl.js"></script>
-    <script src="controllers/AccountCtrl.js"></script>
-    <script src="controllers/GoodDetailCtrl.js"></script>
-    <script src="controllers/GoodsListCtrl.js"></script>
+
+    <!--<script src="main.js"></script>-->
+    <!--<script src="factory/factory.js"></script>-->
+    <!--<script src="factory/global.js"></script>-->
+    <!--<script src="route/route.js"></script>-->
+    <!--<script src="controllers/GoodDetailCtrl.js"></script>
+    <script src="controllers/GoodsListCtrl.js"></script>-->
 
     <style>
         body{
@@ -42,5 +32,27 @@
 </head>
 <body>
 <ion-nav-view></ion-nav-view>
+<!--<script type="text/javascript" src="lib/ionic.bundle.min.js"></script>-->
+<script src="http://xiaoerke-webapp-js.oss-cn-beijing.aliyuncs.com/js/ionic.bundle.min.js"></script>
+<script>
+    "use strict";
+    var require = {
+        waitSeconds: 15,
+        urlArgs: "ver=1.0.4",  //防止读取缓存，调试用
+        deps : ['main']
+    };
+    var wxVersion = "1.0.4";
+</script>
+<script type="text/javascript" src="lib/require.min.js"></script>
+<!--<link href="styles/common.less" rel="stylesheet"/>
+<link href="styles/home.less" rel="stylesheet"/>
+<link href="styles/classify.less" rel="stylesheet"/>
+<link href="styles/shopping.less" rel="stylesheet"/>
+<link href="styles/account.less" rel="stylesheet"/>
+<script src="controllers/TabCtrl.js"></script>
+<script src="controllers/HomeCtrl.js"></script>
+<script src="controllers/ClassifyCtrl.js"></script>
+<script src="controllers/ShoppingCtrl.js"></script>
+<script src="controllers/AccountCtrl.js"></script>-->
 </body>
 </html>

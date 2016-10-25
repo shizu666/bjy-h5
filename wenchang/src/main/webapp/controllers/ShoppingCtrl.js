@@ -1,4 +1,4 @@
-angular.module('Shopping',[])
+angular.module('controllers',[])
     .controller('ShoppingCtrl',['$scope','$state','$stateParams','$ionicLoading','$timeout',
         function ($scope,$state,$stateParams,$ionicLoading,$timeout) {
 

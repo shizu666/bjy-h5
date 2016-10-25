@@ -1,4 +1,4 @@
-angular.module('Tab',[])
+angular.module('controllers',[])
     .controller('TabCtrl',['$scope','$state','$stateParams','$ionicLoading','$timeout','$templateCache','HomeMessage',
         function ($scope,$state,$stateParams,$ionicLoading,$timeout,$templateCache,HomeMessage) {
 

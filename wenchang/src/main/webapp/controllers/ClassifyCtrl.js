@@ -1,4 +1,4 @@
-angular.module('Classify',[])
+angular.module('controllers',[])
     .controller('ClassifyCtrl',['$scope','$state','$stateParams','$ionicLoading','$timeout',
         function ($scope,$state,$stateParams,$ionicLoading,$timeout) {
 
