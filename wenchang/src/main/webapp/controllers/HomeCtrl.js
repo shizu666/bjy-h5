@@ -52,6 +52,13 @@ angular.module('Home',[])
                 }
             }
 
+            
+            //去商品分类页
+            $scope.goGoods = function (index) {
+                $state.go("goodsList",{id:index});
+            }
+            
+            
             //返回页面头部
             $scope.returnTop = function () {
                 $ionicScrollDelegate.scrollTop();

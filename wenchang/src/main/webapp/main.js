@@ -1,4 +1,4 @@
-angular.module('app',['ionic','route','factory','global'])
+angular.module('app',['ionic','route','factory','global','ngResource'])
     .config(function($stateProvider, $urlRouterProvider,$ionicConfigProvider) {
         //$ionicConfigProvider.platform.ios.tabs.style('standard');
         //$ionicConfigProvider.platform.ios.tabs.position('bottom');

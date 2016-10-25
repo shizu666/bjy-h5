@@ -1,10 +1,11 @@
-angular.module('route',['Tab','Home','Classify','Shopping','Account'])
+angular.module('route',['Tab','Home','Classify','Shopping','Account','GoodDetail','GoodsList'])
     .config(function ($stateProvider, $urlRouterProvider) {
         $stateProvider
 
             .state('tab',{
                 url:'/tab',
                 abstract: true,
+                cache: false,
                 templateUrl:'views/tab.html',
                 controller:'TabCtrl'
             })
@@ -45,6 +46,16 @@ angular.module('route',['Tab','Home','Classify','Shopping','Account'])
                         controller: 'AccountCtrl'
                     }
                 }
+            })
+            .state('goodDetail',{
+                url:'/goodDetail/:id',
+                templateUrl:'views/goodDetail.html',
+                controller: 'GoodDetailCtrl'
+            })
+            .state('goodsList',{
+                url:'/goodsList/:id',
+                templateUrl:'views/goodsList.html',
+                controller: 'GoodsListCtrl'
             });
 
         $urlRouterProvider.otherwise('/tab/home');

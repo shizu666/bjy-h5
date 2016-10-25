@@ -13,8 +13,14 @@ angular.module('Tab',[])
             //     $ionicLoading.hide();
             // },1000);
 
-            
-            
+
+                HttpGet.back("http://192.168.9.136:8080/wms-web/services/inbound/getPrePurchaseProduct/11111?baseWarehouseCode=sh001")
+                    .success(function (data) {
+                        console.log("ddd",data);
+                    })
+                    .error(function (data) {
+                            console.log("data",data);
+                    });
 
 
 

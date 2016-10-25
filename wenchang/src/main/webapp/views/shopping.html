@@ -5,14 +5,48 @@
             <img src="images/shopping/card.jpg" width="40" height="30"/>
             <span>购物车空空如也,赶紧逛逛吧~</span>
         </div>
-        <div class="have_shopping">
+        <div class="have_shopping" ng-repeat="item in [0,1]">
             <div class="hs_mess">
-                <div>
+                <span class="mess_check">
                     <input type="checkbox"/>
-                </div>
-                <img src="images/shopping/2.png" width="16" height="13"/>
-                <div class="mess_name">鸿星尔克、李宁<img src="images/account/jiantou.png" width="8" height="14"/></div>
+                </span>
+                <span><img src="images/shopping/2.png" width="16" height="13"/></span>
+                <div class="mess_name">
+                    <span>鸿星尔克、李宁官方旗舰店点点点带你</span>
+                    <img src="images/account/jiantou.png" width="8" height="14"/></div>
                 <div class="mess_other">领卷</div>
+            </div>
+            <div class="hs_redemption">
+                <span>换购</span>
+                <span>活动商品满199，即可参加抽奖活动，先到先得，奖品丰富。</span>
+                <span><img src="images/account/jiantou.png" width="8" height="14"/></span>
+            </div>
+            <div class="hs_product">
+                <div class="hsp" ng-repeat="item in [0,1,2]">
+                    <div class="hsp_com hsp_d1">
+                       <input type="checkbox"/>
+                    </div>
+                    <div class="hsp_com hsp_d2">
+                        <div class="hsp_com d2_1">
+                            <img src="images/shopping/3.jpg" width="88" height="88"/>
+                        </div>
+                        <div class="hsp_com d2_2">
+                            <div class="d2_name">
+                                鸿星尔克鸿星鸿星尔克鸿星鸿星尔克鸿星尔克鸿星尔克鸿星
+                            </div>
+                            <div class="d2_mess">
+                                <span>颜色:黑花</span><span>尺码:50</span>
+                            </div>
+                            <div class="d2_money">
+                                ￥<span>1555</span>.02
+                            </div>
+                            <div class="d2_number">
+                                x1<span>编辑</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
         <div class="shopping_tj" ng-repeat="item in [0,1,2,3]">
@@ -33,7 +67,7 @@
                             <span class="big_price">499</span>
                             <span class="small_price">.90</span>
                         </span>
-                       <!-- <span class="shopping_tjp_similarity">看相似</span>-->
+                        <!-- <span class="shopping_tjp_similarity">看相似</span>-->
                     </div>
                 </li>
             </ul>

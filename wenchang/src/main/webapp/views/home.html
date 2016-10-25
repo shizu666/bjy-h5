@@ -1,4 +1,4 @@
-<ion-view view-title="首页" class="home">
+<ion-view view-title="首页" cache-view="false" class="home">
     <div id="search" class="search home_center">
         <img class="s_img" src="images/top-jdlogo.png" width="40" height="40"/>
         <div class="s_content">
@@ -17,7 +17,7 @@
             </ion-slide>
         </ion-slide-box>
         <div class="kind">
-            <div class="k_kind" ng-repeat="item in kindList">
+            <div class="k_kind" ng-repeat="item in kindList" ng-click="goGoods($index)">
                 <img ng-src="{{item.img}}" width="40" height="40"/>
                 <div>{{item.title}}</div>
             </div>
